@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Agbalumo-Regular'; /* Name of your font */
+  src: url('/fonts/Agbalumo-Regular.ttf')
+}
+
+.brand-namez {
+  font-family: 'Agbalumo-Regular', sans-serif; /* Apply your custom font to the class */
+  /* Other styling for your class */
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema Escape</title>
+  <link rel="stylesheet" href="/css/mod.css" />
+  <link rel="stylesheet" href="/css/extra.css">
+  <link rel="stylesheet" href="/fonts/Agbalumo-Regular.ttf">
+</head>
+
+<body class="bg-black">
+
+  <!--Navbar-->
+  <!-- Include jQuery -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+  <!-- Inline script to load navbar -->
+  <script>
+    // Wait for the document to be ready
+    $(document).ready(function () {
+      // Load the navbar into an element with id "navbar-container"
+      $("#navbar-container").load("comps/navbar.html");
+    });
+  </script>
+
+  <div id="navbar-container"></div>
+
+  <!--/Navbar-->
+
+  <!-- Trailers -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ratio ratio-16x9">
+          <iframe id="youtube-iframe" width="560" height="315" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="border border-5 border-white"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Trailers -->
+
+  <script>
+    // List of YouTube video URLs with autoplay enabled
+    const videoList = [
+      "https://www.youtube.com/embed/W_H7_tDHFE8?autoplay=1", // Cars trailer
+      "https://www.youtube.com/embed/t0fiJbA8UoI?autoplay=1", // Dollhouse trailer
+      "https://www.youtube.com/embed/lc0UehYemQA?autoplay=1", // Jurassic Park trailer
+      "https://www.youtube.com/embed/vgr2syY_OU4?autoplay=1", // Skyfall trailer
+      "https://www.youtube.com/embed/tc-u3GmZ_no?autoplay=1", // Spectre trailer
+      // Add more video URLs as needed
+    ];
+
+    // Function to pick a random video URL
+    function getRandomVideoUrl() {
+      const randomIndex = Math.floor(Math.random() * videoList.length);
+      return videoList[randomIndex];
+    }
+
+    // Update the iframe src on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      const iframe = document.getElementById('youtube-iframe');
+      const randomVideoUrl = getRandomVideoUrl();
+      iframe.src = randomVideoUrl;
+    });
+  </script>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bg-pc1 p-5">
+          <h1 class="text-center text-white mb-4">Currently Streaming</h1> <!--Vymyslet lepší název-->
+
+          <div class="container">
+            <div class="row">
+              <!--<div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt0317219/" target="_blank"><img
+                    src="https://static.posters.cz/image/750/plakaty/cars-one-sheet-i1253.jpg" alt="Cars 1"
+                    class="border border-5 border-white img-fluid" style="width: 325px; height: 450px;"></a>
+              </div>
+
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt12545232/" target="_blank"><img
+                    src="https://preview.redd.it/6ifmuqo4aoi31.jpg?width=1080&crop=smart&auto=webp&s=b0a45ea25adae60f16ed7fdd1b274e15fbd363b1"
+                    alt="DollHouse" class="border border-5 border-white img-fluid"
+                    style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt13484102/" target="_blank"><img
+                    src="https://preview.redd.it/opv1h4p8cbd51.jpg?width=1080&crop=smart&auto=webp&s=c49a5dfb6586acfbbb561cf8fcef065eeff64043"
+                    alt="OverLord" class="border border-5 border-white img-fluid"
+                    style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt0107290/" target="_blank"><img
+                    src="https://filmartgallery.com/cdn/shop/files/Jurassic-Park-Vintage-Movie-Poster-Original-1-Sheet-27x41.jpg?v=1684472572"
+                    alt="Jurassic Park" class="border border-5 border-white img-fluid"
+                    style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt1074638/" target="_blank"><img
+                    src="https://static.posters.cz/image/750/plakaty/james-bond-007-skyfall-i12750.jpg" alt="Skyfall"
+                    class="border border-5 border-white img-fluid" style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt2379713/" target="_blank"><img
+                    src="https://i.insider.com/550878696da8118e4d81622b?width=1000&format=jpeg&auto=webp" alt="Spectre"
+                    class="border border-5 border-white img-fluid" style="width: 325px; height: 450px;"></a>
+              </div>-->
+
+
+
+              <div class="col-md-4 p-2">
+                <img src="https://static.posters.cz/image/750/plakaty/cars-one-sheet-i1253.jpg" alt="Cars 1"
+                  class="border border-5 border-white img-fluid" style="width: 325px; height: 450px;"
+                  style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#cars1">
+              </div>
+
+
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt12545232/" target="_blank"><img
+                    src="https://preview.redd.it/6ifmuqo4aoi31.jpg?width=1080&crop=smart&auto=webp&s=b0a45ea25adae60f16ed7fdd1b274e15fbd363b1"
+                    alt="DollHouse" class="border border-5 border-white img-fluid"
+                    style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt13484102/" target="_blank"><img
+                    src="https://preview.redd.it/opv1h4p8cbd51.jpg?width=1080&crop=smart&auto=webp&s=c49a5dfb6586acfbbb561cf8fcef065eeff64043"
+                    alt="OverLord" class="border border-5 border-white img-fluid"
+                    style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt0107290/" target="_blank"><img
+                    src="https://filmartgallery.com/cdn/shop/files/Jurassic-Park-Vintage-Movie-Poster-Original-1-Sheet-27x41.jpg?v=1684472572"
+                    alt="Jurassic Park" class="border border-5 border-white img-fluid"
+                    style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt1074638/" target="_blank"><img
+                    src="https://static.posters.cz/image/750/plakaty/james-bond-007-skyfall-i12750.jpg" alt="Skyfall"
+                    class="border border-5 border-white img-fluid" style="width: 325px; height: 450px;"></a>
+              </div>
+              <div class="col-md-4 p-2">
+                <a href="https://www.imdb.com/title/tt2379713/" target="_blank"><img
+                    src="https://i.insider.com/550878696da8118e4d81622b?width=1000&format=jpeg&auto=webp" alt="Spectre"
+                    class="border border-5 border-white img-fluid" style="width: 325px; height: 450px;"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Open shit
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="cars1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--<h1 class="modal-title fs-5" id="exampleModalLabel">Cars</h1>-->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>Story line</h3>
+          <p>While traveling to California for the dispute of the final race of the Piston Cup against The King and
+            Chick Hicks, the famous Lightning McQueen accidentally damages the road of the small town Radiator Springs
+            and is sentenced to repair it. Lightning McQueen has to work hard and finds friendship and love in the
+            simple locals, changing its values during his stay in the small town and becoming a true winner.</p>
+          <h3>Genres</h3>
+          <p>Animation, Adventure, Comedy, Family, Sport</p>
+          <h3>Rating</h3>
+          <p>- G</p>
+          <a href="https://www.imdb.com/title/tt0317219/" target="_blank">more information...</a>
+        </div>
+        <div class="modal-footer">
+          <div class="d-grid gap-2 co-6 mx-auto">
+            <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close window</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

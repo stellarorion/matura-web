@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mod.css" />
+    <link rel="stylesheet" href="../css/extra.css">
+    <link rel="stylesheet" href="../fonts/Agbalumo-Regular.ttf">
+</head>
+
+<body class="bg-black text-white">
+
+    <!--Navbar-->
+    <!-- Include jQuery -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Inline script to load navbar -->
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function () {
+            // Load the navbar into an element with id "navbar-container"
+            $("#navbar-container").load("../../comps/navbar.html");
+        });
+    </script>
+
+    <div id="navbar-container"></div>
+
+    <!--/Navbar-->
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
