@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base | Cinema Escape</title>
+    <link rel="stylesheet" href="../../css/mod.css" />
+    <link rel="stylesheet" href="../../css/extra.css">
+    <link rel="stylesheet" href="../../fonts/Agbalumo-Regular.ttf">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!--Navbar-->
+    <!-- Include jQuery -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Inline script to load navbar -->
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function () {
+            // Load the navbar into an element with id "navbar-container"
+            $("#navbar-container").load("../../comps/navbar.html");
+        });
+    </script>
+
+    <div id="navbar-container"></div>
+
+    <!--/Navbar-->
+
+
+    <div class="container mt-5 bg-pc1 p-5">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="https://m.media-amazon.com/images/I/51cc0CIOWhL._AC_UF894,1000_QL80_.jpg"
+                    class="border border-5 border-white rounded img-fluid" style="height: 800px;" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="fw-bold">Shut up!</h1>
+                <h2 class="fw-bold">Trailer</h2>
+                <iframe class="ratio ratio-16x9" width="460" height="315"
+                    src="https://www.youtube.com/embed/QIAOCWMI5r0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h2 class="fw-bold">Storyline</h2>
+                <p>After hiding his loot and getting thrown in jail, Ruby, a brooding outlaw, encounters Quentin, a
+                    dim-witted and garrulous giant who befriends him. After Quentin botches Runy's solo escape attempt,
+                    they make a break together. Unable to shake the clumsy Quentin, Ruby is forced to take him along as
+                    he pursues his former partners in crime to avenge the death of the woman he loved and get to the
+                    money before they do.</p>
+                <h2 class="fw-bold"><i class="bi bi-clock"></i>Movie Time: 1h 25m</h2>
+                <h2 class="fw-bold"><i class="bi bi-info-circle"></i>Movie Rating: <a href="/parentalguide/"
+                        class="text-white">Not rated</a>
+                </h2>
+                <h2 class="fw-bold">IMDb rating: 7.1 <i class="bi bi-star-fill"></i></h2>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+</body>

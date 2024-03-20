@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base | Cinema Escape</title>
+    <link rel="stylesheet" href="../../css/mod.css" />
+    <link rel="stylesheet" href="../../css/extra.css">
+    <link rel="stylesheet" href="../../fonts/Agbalumo-Regular.ttf">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!--Navbar-->
+    <!-- Include jQuery -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Inline script to load navbar -->
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function () {
+            // Load the navbar into an element with id "navbar-container"
+            $("#navbar-container").load("../../comps/navbar.html");
+        });
+    </script>
+
+    <div id="navbar-container"></div>
+
+    <!--/Navbar-->
+
+
+    <div class="container mt-5 bg-pc1 p-5">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/f3b72d106818497.5f989c48c7697.jpg"
+                    class="border border-5 border-white rounded img-fluid" style="height: 800px;" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="fw-bold">The mask</h1>
+                <h2 class="fw-bold">Trailer</h2>
+                <iframe class="ratio ratio-16x9" width="460" height="315"
+                    src="https://www.youtube.com/embed/LT8kBr3TUvk" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h2 class="fw-bold">Storyline</h2>
+                <p>Timid bank clerk, Stanley Ipkiss (Jim Carrey). Unfortunately, he's too gentle, and is unable to
+                    handle confrontations. After one of the worst days, he finds a mask which depicts Loki, the Norse
+                    god of mischief. When he puts it on, he becomes his inner, self: a cartoon wild man. After Ipkiss's
+                    alter ego indirectly kills the friend of small time crime boss, Dorian Tyrel (Peter Greene),he wants
+                    the green-faced goon destroyed.</p>
+                <h2 class="fw-bold"><i class="bi bi-clock"></i>Movie Time: 1h 41m</h2>
+                <h2 class="fw-bold"><i class="bi bi-info-circle"></i>Movie Rating: <a href="/parentalguide/"
+                        class="text-white">PG-13</a>
+                </h2>
+                <h2 class="fw-bold">IMDb rating: 6.9 <i class="bi bi-star-fill"></i></h2>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+</body>

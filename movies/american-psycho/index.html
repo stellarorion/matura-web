@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base | Cinema Escape</title>
+    <link rel="stylesheet" href="../../css/mod.css" />
+    <link rel="stylesheet" href="../../css/extra.css">
+    <link rel="stylesheet" href="../../fonts/Agbalumo-Regular.ttf">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!--Navbar-->
+    <!-- Include jQuery -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Inline script to load navbar -->
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function () {
+            // Load the navbar into an element with id "navbar-container"
+            $("#navbar-container").load("../../comps/navbar.html");
+        });
+    </script>
+
+    <div id="navbar-container"></div>
+
+    <!--/Navbar-->
+
+
+    <div class="container mt-5 bg-pc1 p-5">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="https://i.ebayimg.com/images/g/RpcAAOSwjSNjQs3P/s-l1600.jpg"
+                    class="border border-5 border-white rounded img-fluid" style="height: 800px;" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="fw-bold">American Psycho</h1>
+                <h2 class="fw-bold">Trailer</h2>
+                <iframe class="ratio ratio-16x9" width="460" height="315"
+                    src="https://www.youtube.com/embed/81mibtQWWBg" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h2 class="fw-bold">Storyline</h2>
+                <p>It's the late 1980s. Twenty-seven year old Wall Streeter Patrick Bateman travels among a closed
+                    network of the proverbial beautiful people, that closed network in only they able to allow others
+                    like themselves in in a feeling of superiority. Patrick has a routinized morning regimen to maintain
+                    his appearance of attractiveness and fitness. He, like those in his network, are vain, narcissistic,
+                    egomaniacal and competitive, always having to one up everyone else in that presentation of oneself,
+                    but he, unlike the others, realizes that, for himself, all of these are masks to hide what is truly
+                    underneath, someone/something inhuman in nature. In other words, he is comprised of a shell
+                    resembling a human that contains only greed and disgust, greed in wanting what others may have, and
+                    disgust for those who do not meet his expectations and for himself in not being the first or the
+                    best. That disgust ends up manifesting itself in wanting to rid the world of those people, he not
+                    seeing them as people but only of those characteristics he wants to rid.</p>
+                <h2 class="fw-bold"><i class="bi bi-clock"></i>Movie Time: 1h 42m</h2>
+                <h2 class="fw-bold"><i class="bi bi-info-circle"></i>Movie Rating: <a href="/parentalguide/"
+                        class="text-white">R</a>
+                </h2>
+                <h2 class="fw-bold">IMDb rating: 7.6 <i class="bi bi-star-fill"></i></h2>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+</body>

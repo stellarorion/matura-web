@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base | Cinema Escape</title>
+    <link rel="stylesheet" href="../../css/mod.css" />
+    <link rel="stylesheet" href="../../css/extra.css">
+    <link rel="stylesheet" href="../../fonts/Agbalumo-Regular.ttf">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!--Navbar-->
+    <!-- Include jQuery -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Inline script to load navbar -->
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function () {
+            // Load the navbar into an element with id "navbar-container"
+            $("#navbar-container").load("../../comps/navbar.html");
+        });
+    </script>
+
+    <div id="navbar-container"></div>
+
+    <!--/Navbar-->
+
+
+    <div class="container mt-5 bg-pc1 p-5">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="https://preview.redd.it/6ifmuqo4aoi31.jpg?auto=webp&s=a86a5a9cb47dea29d1eebdc9c770e2083fd98958"
+                    class="border border-5 border-white rounded img-fluid" style="height: 800px;" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="fw-bold">SCP: Dollhouse</h1>
+                <h2 class="fw-bold">Trailer</h2>
+                <iframe class="ratio ratio-16x9" width="460" height="315"
+                    src="https://www.youtube.com/embed/t0fiJbA8UoI" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h2 class="fw-bold">Storyline</h2>
+                <p>A group of MTF Operatives perform a sweep of a house in suburban Middle America after reports of
+                    anomalous activity inside. The group are unprepared with lacking and misguided intel and find
+                    themselves incapable of dealing with the threat inside the home</p>
+                <h2 class="fw-bold"><i class="bi bi-clock"></i>Movie Time: 17m</h2>
+                <h2 class="fw-bold"><i class="bi bi-info-circle"></i>Movie Rating: <a href="/parentalguide/"
+                        class="text-white">Not rated</a>
+                </h2>
+                <h2 class="fw-bold">IMDb rating: 7.0 <i class="bi bi-star-fill"></i></h2>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+</body>

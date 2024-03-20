@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base | Cinema Escape</title>
+    <link rel="stylesheet" href="../../css/mod.css" />
+    <link rel="stylesheet" href="../../css/extra.css">
+    <link rel="stylesheet" href="../../fonts/Agbalumo-Regular.ttf">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!--Navbar-->
+    <!-- Include jQuery -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Inline script to load navbar -->
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function () {
+            // Load the navbar into an element with id "navbar-container"
+            $("#navbar-container").load("../../comps/navbar.html");
+        });
+    </script>
+
+    <div id="navbar-container"></div>
+
+    <!--/Navbar-->
+
+
+    <div class="container mt-5 bg-pc1 p-5">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGIxNzJmNjktYzA5OS00MmZlLThlYjItNTkxMGFhMjRkNDkzXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg"
+                    class="border border-5 border-white rounded img-fluid" style="height: 800px;" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="fw-bold">Interstate 60</h1>
+                <h2 class="fw-bold">Trailer</h2>
+                <iframe class="ratio ratio-16x9" width="460" height="315"
+                    src="https://www.youtube.com/embed/OGFjOmQE-Zo" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h2 class="fw-bold">Storyline</h2>
+                <p>Neal Oliver is a young artist, but his father doesn't like his choice and wants him to go to Oxford.
+                    Everything changes after Neal's meeting with O.W.Grant, who grants exactly one wish per person, as
+                    his name suggests. Neal wishes for answers, and so he must travel to the nonexistent Danver by the
+                    nonexistent Interstate 60. In this trip he hopes to find the girl of his dreams, following the trail
+                    of her photos on the advertising stands along the route. Many encounters await him ahead. Will he
+                    receive what he asked for?</p>
+                <h2 class="fw-bold"><i class="bi bi-clock"></i>Movie Time: 1h 56m</h2>
+                <h2 class="fw-bold"><i class="bi bi-info-circle"></i>Movie Rating: <a href="/parentalguide/"
+                        class="text-white">R</a>
+                </h2>
+                <h2 class="fw-bold">IMDb rating: 7.6 <i class="bi bi-star-fill"></i></h2>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+</body>

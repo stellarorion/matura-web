@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base | Cinema Escape</title>
+    <link rel="stylesheet" href="../../css/mod.css" />
+    <link rel="stylesheet" href="../../css/extra.css">
+    <link rel="stylesheet" href="../../fonts/Agbalumo-Regular.ttf">
+    <link rel="stylesheet" href="../../bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!--Navbar-->
+    <!-- Include jQuery -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Inline script to load navbar -->
+    <script>
+        // Wait for the document to be ready
+        $(document).ready(function () {
+            // Load the navbar into an element with id "navbar-container"
+            $("#navbar-container").load("../../comps/navbar.html");
+        });
+    </script>
+
+    <div id="navbar-container"></div>
+
+    <!--/Navbar-->
+
+
+    <div class="container mt-5 bg-pc1 p-5">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="https://static.posters.cz/image/750/plakaty/james-bond-spectre-one-sheet-i28519.jpg"
+                    class="border border-5 border-white rounded img-fluid" style="height: 800px;" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="fw-bold">Spectre</h1>
+                <h2 class="fw-bold">Trailer</h2>
+                <iframe class="ratio ratio-16x9" width="460" height="315"
+                    src="https://www.youtube.com/embed/ujmoYyEyDP8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h2 class="fw-bold">Storyline</h2>
+                <p>A cryptic message from the past sends James Bond on a rogue mission to Mexico City and eventually
+                    Rome. Bond infiltrates a secret meeting and uncovers the existence of the sinister organisation
+                    known as S.P.E.C.T.R.E. Meanwhile, back in London, Max Denbigh, the new head of the Centre of
+                    National Security, questions Bond's actions and challenges the relevance of MI6, led by M. Bond
+                    covertly enlists Miss Eve Moneypenny and Q to help him seek out Dr. Madeleine Swann, who may help
+                    untangle the web of S.P.E.C.T.R.E. As Bond ventures towards the heart of S.P.E.C.T.R.E., he learns a
+                    chilling connection between him and the enemy he seeks.</p>
+                <h2 class="fw-bold"><i class="bi bi-clock"></i>Movie Time: 2h 28m</h2>
+                <h2 class="fw-bold"><i class="bi bi-info-circle"></i>Movie Rating: <a href="/parentalguide/"
+                        class="text-white">PG-13</a>
+                </h2>
+                <h2 class="fw-bold">IMDb rating: 6.8 <i class="bi bi-star-fill"></i></h2>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+</body>
