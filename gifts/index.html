@@ -62,7 +62,7 @@
 
 
     <div class="container my-3">
-        <h1 class="text-center">Buy a gift card</h1>
+        <h1 class="text-center">Gift cards</h1>
     </div>
 
     <div class="container bg-pc1 p-4 rounded">
@@ -73,10 +73,10 @@
                     <h1 class="text-center mt-3">10$</h1>
                     <div class="card-body">
                         <h5 class="card-title">Ten dollars</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">A physical or virtual gift-card with a store credit of $10.</p>
                         <div class="text-center">
-                            <a href="../gifts/buy/" class="btn btn-pc1">Purchase</a>
+                            <a href="../gifts/buy/" class="btn btn-pc1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Purchase</a>
                         </div>
                     </div>
                 </div>
@@ -86,10 +86,10 @@
                     <h1 class="text-center mt-3">15$</h1>
                     <div class="card-body">
                         <h5 class="card-title">Fifteen dollars</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">A physical or virtual gift-card with a store credit of $15.</p>
                         <div class="text-center">
-                            <a href="../gifts/buy/" class="btn btn-pc1">Purchase</a>
+                            <a href="../gifts/buy/" class="btn btn-pc1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Purchase</a>
                         </div>
                     </div>
                 </div>
@@ -100,10 +100,10 @@
                     <h1 class="text-center mt-3">20$</h1>
                     <div class="card-body">
                         <h5 class="card-title">Twenty dollars</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">A physical or virtual gift-card with a store credit of $20.</p>
                         <div class="text-center">
-                            <a href="../gifts/buy/" class="btn btn-pc1">Purchase</a>
+                            <a href="../gifts/buy/" class="btn btn-pc1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Purchase</a>
                         </div>
                     </div>
                 </div>
@@ -113,10 +113,10 @@
                     <h1 class="text-center mt-3">30$</h1>
                     <div class="card-body">
                         <h5 class="card-title">Thirty dollars</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">A physical or virtual gift-card with a store credit of $30.</p>
                         <div class="text-center">
-                            <a href="../gifts/buy/" class="btn btn-pc1">Purchase</a>
+                            <a href="../gifts/buy/" class="btn btn-pc1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Purchase</a>
                         </div>
                     </div>
                 </div>
@@ -125,8 +125,31 @@
         </div>
     </div>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">:(</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-black">
+                    We apologize for the inconvenience, but online purchases for gift cards and merchandise related to
+                    our cinema are currently unavailable. These items can only be purchased at our physical location. We
+                    appreciate your understanding and encourage you to visit our cinema to make your purchase. Thank you
+                    for your understanding.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=".././bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>
 
